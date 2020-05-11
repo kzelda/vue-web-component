@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-hello": "vue-cli-service build --target wc --name my-custom-element ./src/HelloWorld.vue",
-    "serve-dist": "serve dist"
+    "build-hello-lib": "vue-cli-service build --dest dist-lib --target lib --name myLib ./src/HelloWorld.vue",
+    "build-hello-wc": "vue-cli-service build --dest dist-wc --target wc --name my-custom-element ./src/HelloWorld.vue",
+    "serve-dist-lib": "serve dist-lib",
+    "serve-dist-wc": "serve dist-wc"
   },
   "dependencies": {
     "core-js": "^3.6.4",
