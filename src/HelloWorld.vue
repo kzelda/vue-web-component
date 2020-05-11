@@ -1,6 +1,6 @@
 <template>
   <div>
-    Message :<h1>{{ msg }}</h1>
+    Message :<h1 @click="sayHello">{{ msg }}</h1>
   </div>
 </template>
 
@@ -8,6 +8,11 @@
 export default {
   props: {
     msg: String
+  },
+  methods:{
+    sayHello(){
+      console.log(Date.now(),this.msg)
+    }
   }
 }
 </script>
